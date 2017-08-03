@@ -1,0 +1,167 @@
+body {
+  background-color: #9E9E9E;
+  margin: 40px;
+  background-image: url("../img/background.png");
+  user-select: none;
+  -moz-user-select: none; }
+
+.title {
+  font-family: "Sarpanch";
+  position: absolute;
+  text-align: center;
+  left: 0;
+  right: 0;
+  top: -22px;
+  font-size: 60px;
+  font-weight: bold; }
+
+.circle {
+  margin: auto;
+  width: 450px;
+  height: 450px;
+  background: black;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 12px solid black;
+  position: relative; }
+  .circle .quarter {
+    position: absolute;
+    width: 213px;
+    height: 213px;
+    transition: background-color 0.2s ease-in-out;
+    cursor: pointer; }
+  .circle .q1 {
+    bottom: 0;
+    right: 0;
+    background-color: #1565C0;
+    border-radius: 0 0 100% 0; }
+  .circle .q2 {
+    top: 0;
+    left: 0;
+    background-color: #1B5E20;
+    border-radius: 100% 0 0 0; }
+  .circle .q3 {
+    top: 0;
+    right: 0;
+    background-color: #B71C1C;
+    border-radius: 0 100% 0 0; }
+  .circle .q4 {
+    bottom: 0;
+    left: 0;
+    background-color: #FDD835;
+    border-radius: 0 0 0 100%; }
+  .circle .bar {
+    background: black;
+    position: absolute; }
+  .circle .horizontalBar {
+    width: 436px;
+    height: 12px;
+    top: 207px; }
+  .circle .verticalBar {
+    width: 12px;
+    height: 436px;
+    left: 207px; }
+
+.cutout {
+  position: absolute;
+  top: 70px;
+  right: 70px;
+  background: white;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: black;
+  border-width: 12px;
+  height: 266px;
+  width: 266px; }
+  .cutout .countBox {
+    position: absolute;
+    top: 105px;
+    left: 20px;
+    width: 75px;
+    height: 50px;
+    background: #3D3C3C;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center; }
+  .cutout .clickButton {
+    position: absolute;
+    top: 120px;
+    background: #3D3C3C;
+    text-align: center;
+    height: 25px;
+    width: 50px;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    line-height: 6px;
+    color: white; }
+  .cutout .startButton {
+    right: 100px; }
+  .cutout .strictButton {
+    right: 30px; }
+  .cutout .switch {
+    position: absolute;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    top: 200px;
+    right: 103px; }
+  .cutout .switch input {
+    display: none; }
+  .cutout .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 8px;
+    background-color: #3D3C3C;
+    -webkit-transition: 0.4s;
+    transition: 0.4s; }
+  .cutout .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    border-radius: 5px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s; }
+  .cutout input:checked + .slider {
+    background-color: #3D3C3C; }
+  .cutout input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3; }
+  .cutout input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px); }
+  .cutout .slider.round {
+    border-radius: 34px; }
+  .cutout .slider.round:before {
+    border-radius: 50%; }
+  .cutout .on {
+    position: absolute;
+    top: 158px;
+    left: 170px; }
+  .cutout .off {
+    position: absolute;
+    top: 158px;
+    left: 58px; }
+
+p {
+  font-size: 12px;
+  font-family: "Roboto"; }
+
+h2 {
+  font-family: "Orbitron";
+  font-size: 30px;
+  text-align: center;
+  color: #FF0000;
+  line-height: 4px; }
+
+h6 {
+  font-size: 20px;
+  font-family: "Roboto"; }

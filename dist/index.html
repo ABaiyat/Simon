@@ -1,0 +1,43 @@
+<html>
+
+<head>
+  <title>Simon</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css?family=Sarpanch" rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Orbitron" rel='stylesheet' type='text/css'>
+
+  <script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/soundmanager2/2.97a.20150601/script/soundmanager2-jsmin.js"></script>
+</head>
+
+<body>
+  <div class="circle">
+    <div id="q1" class="quarter q1"></div>
+    <div id="q2" class="quarter q2"></div>
+    <div id="q3" class="quarter q3"></div>
+    <div id="q4" class="quarter q4"></div>
+
+    <div class="horizontalBar bar"></div>
+    <div class="verticalBar bar"></div>
+    <div class="cutout text-center">
+      <h1 class="title">simon</h1>
+      <div class="startButton clickButton">
+        <p>START</p>
+      </div>
+      <div class="strictButton clickButton">
+        <p>STRICT</p>
+      </div>
+      <label class="switch">
+        <input type="checkbox">
+        <div class="slider "></div>
+      </label>
+      <div class="countBox">
+        <h2 id="count"></h2>
+      </div>
+      <h6 class="on">ON</h6>
+      <h6 class="off">OFF</h6>
+    </div>
+</body>
+</html>
